@@ -1,0 +1,11 @@
+
+apiVersion: s3.aws.crossplane.io/v1alpha3
+kind: Bucket
+metadata:
+  name: example-bucket
+spec:
+  forProvider:
+    acl: private
+    locationConstraint: us-west-2
+  providerConfigRef:
+    name: aws-provider
