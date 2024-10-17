@@ -2,10 +2,10 @@
 apiVersion: s3.aws.crossplane.io/v1alpha3
 kind: Bucket
 metadata:
-  name: example-bucket
+  name: argocd-bucket
 spec:
   forProvider:
     acl: private
-    locationConstraint: us-west-2
+    locationConstraint: eu-west-3
   providerConfigRef:
     name: aws-provider
